@@ -1,0 +1,176 @@
+body{
+  font-family:"Century Gothic", sans-serif;
+}
+h1{
+  font-family:"Century Gothic", sans-serif;
+}
+#raket{
+  background-image: url(../afbeelding/raket.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  z-index: 1;
+}
+#raketRotate{
+  background-image: url(../afbeelding/raketrotate.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  z-index: 3;
+}
+button{
+  border: 2px solid #f44336;
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover{
+  border: 2px solid white;
+  background-color: #f44336;
+  font-size: 18px;
+}
+#cloud{
+  background-image: url(../afbeelding/cloudy.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+#zonnigbewolkt{
+  background-image: url(../afbeelding/suncloud.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+#zonnig{
+  background-image: url(../afbeelding/sunny.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+#regenen{
+  background-image: url(../afbeelding/raining.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+#regenen{
+  background-image: url(../afbeelding/thunderstorm.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+@media only screen and (max-device-width:740px)  {
+  h1{
+  font-size: 16px;
+  text-align: center;
+  }
+  .landen{
+    background-color: red;
+    height: 150px;
+  }
+  .weer{
+    background-color: blue;
+    height: 125px;
+  }
+  .omgeving{
+    background-color: green;
+    height: 125px;
+  }
+  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+
+@media only screen and (min-device-width:741px) and (max-device-width:1024px)  {
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+    font-size: 17px;
+    text-align: center;
+  }
+  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
+    height: 100px;
+    width: 100px;
+  }
+  .landen{
+    background-color: red;
+    width: 100%;
+    height: 300px;
+  }
+  .weer{
+    background-color: blue;
+    width: 50%;
+    height: 150px;
+  }
+  .omgeving{
+    background-color: green;
+    width: 50%;
+    height: 125px;
+  }
+}
+
+@media only screen and (min-device-width:1025px) and (max-device-width:1365px)  {
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+    font-size: 18px;
+    text-align: left;
+  }
+  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
+    height: 100px;
+    width: 100px;
+  }
+  .landen{
+    background-color: red;
+    width: 100%;
+    height: 300px;
+  }
+  .weer{
+    background-color: blue;
+    width: 50%;
+    height: 150px;
+  }
+  .omgeving{
+    background-color: green;
+    width: 50%;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-device-width:1366px)  {
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+    font-size: 19px;
+    text-align: left;
+  }
+  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
+    height: 100px;
+    width: 100px;
+  }
+  .landen{
+    background-color: red;
+    width: 33.33%;
+    height: auto;
+  }
+  .weer{
+    background-color: blue;
+    width: 33.33%;
+    height: auto;
+  }
+  .omgeving{
+        background-color: green;
+    width: 33.33%;
+    height: auto;
+  }
+}

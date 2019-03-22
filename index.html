@@ -3,12 +3,59 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Expositie 2: martians</title>
-      <link rel="stylesheet" href="css/opmaak.css" type="text/css"/>
-  <!--    <script src="javascript/tweenmax/TweenMax.min.js"></script>-->
+      <title>Expositie 3: landing</title>
+      <link rel="stylesheet" href="opmaak/opmaak.css" type="text/css"/>
     </head>
     <body>
+      <div class="container">
+        <div class="landen">
+          <h1>Can we land here?</h1>
+          <p id="land"></p>
 
+          <div class="raket" id="raket">
+
+          </div>
+          <div class="raketrotate" id="raketRotate">
+
+          </div>
+        </div>
+        <div class="weer" id="weer">
+          <h1>What is the weather?</h1>
+        <section id="selector">
+          <select id="melding">
+            <option value="0" selected>Kies het weer van vandaag</option>
+            <option value="1">Bewolkt</option>
+            <option value="2">Bewolkt, maar ook een zonnetje</option>
+            <option value="3">Vrij zonnig, maar hier en daar een wolkje</option>
+            <option value="4">Het is zonnig</option>
+            <option value="5">Het regent</option>
+            <option value="6">Het ontweert</option>
+          </select>
+          <button id="buttonmelding">Geef mij het weer!</button>
+        </section>
+        <!--    <div id="cloud">
+
+            </div>
+          <div id="zonnigbewolkt">
+
+            </div>
+            <div id="zonnig">
+
+            </div>
+            <div id="regenen">
+
+            </div>
+            <div id="onweer">
+
+            </div> -->
+        </div>
+        <div class="omgeving">
+          <h1>Something</h1>
+
+        </div>
+
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
