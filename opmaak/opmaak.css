@@ -1,20 +1,21 @@
 body{
+  font-family:"Quicksand", sans-serif;
+}
+h1, h2{
   font-family:"Century Gothic", sans-serif;
 }
-h1{
-  font-family:"Century Gothic", sans-serif;
+h2{
+  color: darkgray;
+  font-family:"Quicksand", sans-serif;
+}
+#weer{
+  font-size: 20px;
 }
 #raket{
   background-image: url(../afbeelding/raket.svg);
   background-repeat: no-repeat;
   margin: 0 auto;
   z-index: 1;
-}
-#raketRotate{
-  background-image: url(../afbeelding/raketrotate.svg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  z-index: 3;
 }
 button{
   border: 2px solid #f44336;
@@ -33,35 +34,35 @@ button:hover{
   background-color: #f44336;
   font-size: 18px;
 }
-#cloud{
-  background-image: url(../afbeelding/cloudy.svg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
 }
-#zonnigbewolkt{
-  background-image: url(../afbeelding/suncloud.svg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
+.iets{
+  margin-top: 25px;
 }
-#zonnig{
-  background-image: url(../afbeelding/sunny.svg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-#regenen{
-  background-image: url(../afbeelding/raining.svg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-#regenen{
-  background-image: url(../afbeelding/thunderstorm.svg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
+#naam{
+  width: auto;
+  height: 100px;
+  overflow: scroll;
+  text-align: center;
 }
 @media only screen and (max-device-width:740px)  {
   h1{
   font-size: 16px;
   text-align: center;
+  }
+  #land{
+    text-align: center;
+  }
+  h2{
+    font-size: 14px;
   }
   .landen{
     background-color: red;
@@ -86,30 +87,33 @@ button:hover{
   .container{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   h1{
     font-size: 17px;
     text-align: center;
+  }
+  #land{
+    text-align: center;
+  }
+  h2{
+    font-size: 15px;
   }
   #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
     height: 100px;
     width: 100px;
   }
   .landen{
-    background-color: red;
     width: 100%;
-    height: 300px;
   }
   .weer{
-    background-color: blue;
     width: 50%;
     height: 150px;
   }
   .omgeving{
-    background-color: green;
     width: 50%;
     height: 125px;
+    margin: 0px;
   }
 }
 
@@ -123,22 +127,22 @@ button:hover{
     font-size: 18px;
     text-align: left;
   }
+  h2{
+    font-size: 16px;
+  }
   #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
     height: 100px;
     width: 100px;
   }
   .landen{
-    background-color: red;
     width: 100%;
     height: 300px;
   }
   .weer{
-    background-color: blue;
     width: 50%;
     height: 150px;
   }
   .omgeving{
-    background-color: green;
     width: 50%;
     height: 150px;
   }
@@ -154,6 +158,9 @@ button:hover{
     font-size: 19px;
     text-align: left;
   }
+  h2{
+    font-size: 16px;
+  }
   #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
     height: 100px;
     width: 100px;
@@ -169,7 +176,7 @@ button:hover{
     height: auto;
   }
   .omgeving{
-        background-color: green;
+    background-color: green;
     width: 33.33%;
     height: auto;
   }
