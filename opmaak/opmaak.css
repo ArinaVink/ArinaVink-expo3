@@ -1,5 +1,6 @@
 body{
   font-family:"Quicksand", sans-serif;
+  background-color: lightgray;
 }
 h1, h2{
   font-family:"Century Gothic", sans-serif;
@@ -17,22 +18,17 @@ h2{
   margin: 0 auto;
   z-index: 1;
 }
-button{
-  border: 2px solid #f44336;
-  background-color: white;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.landen{
+  background-image: url(../afbeelding/delft.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  z-index: 0;
 }
-button:hover{
-  border: 2px solid white;
-  background-color: #f44336;
-  font-size: 18px;
+.weer{
+  background-image: url(../afbeelding/sunny.svg);
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin: 0 auto;
 }
 .background{
   position: absolute;
@@ -65,18 +61,15 @@ button:hover{
     font-size: 14px;
   }
   .landen{
-    background-color: red;
     height: 150px;
   }
   .weer{
-    background-color: blue;
     height: 125px;
   }
   .omgeving{
-    background-color: green;
     height: 125px;
   }
-  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
+  #raket{
     height: 100px;
     width: 100px;
   }
@@ -99,7 +92,7 @@ button:hover{
   h2{
     font-size: 15px;
   }
-  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
+  #raket{
     height: 100px;
     width: 100px;
   }
@@ -130,10 +123,7 @@ button:hover{
   h2{
     font-size: 16px;
   }
-  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
-    height: 100px;
-    width: 100px;
-  }
+
   .landen{
     width: 100%;
     height: 300px;
@@ -161,22 +151,19 @@ button:hover{
   h2{
     font-size: 16px;
   }
-  #raket,#raketRotate,#cloud,#zonnigbewolkt,#zonnig,#regenen,#regenen {
+  #raket{
     height: 100px;
     width: 100px;
   }
   .landen{
-    background-color: red;
     width: 33.33%;
     height: auto;
   }
   .weer{
-    background-color: blue;
     width: 33.33%;
     height: auto;
   }
   .omgeving{
-    background-color: green;
     width: 33.33%;
     height: auto;
   }
