@@ -17,28 +17,18 @@ h2{
   background-repeat: no-repeat;
   margin: 0 auto;
   z-index: 1;
-}
+}/*
 .landen{
   background-image: url(../afbeelding/delft.svg);
   background-repeat: no-repeat;
   margin: 0 auto;
   z-index: 0;
-}
+}*/
 .weer{
   background-image: url(../afbeelding/sunny.svg);
   background-repeat: no-repeat;
   z-index: 0;
   margin: 0 auto;
-}
-.background{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  opacity: 0;
-  overflow: hidden;
-  height: 100px;
-  width: 100px;
 }
 .iets{
   margin-top: 25px;
@@ -85,6 +75,7 @@ h2{
   h1{
     font-size: 17px;
     text-align: center;
+    color: white;
   }
   #land{
     text-align: center;
@@ -147,6 +138,7 @@ h2{
   h1{
     font-size: 19px;
     text-align: left;
+    color: white;
   }
   h2{
     font-size: 16px;
